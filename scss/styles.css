@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+}
+
+#search {
+  padding: 1%;
+  font-size: 1.2rem;
+}
+#search:focus:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #e7e7e7;
+  border: 1px solid #7d7dff;
+}
+/*# sourceMappingURL=styles.css.map */

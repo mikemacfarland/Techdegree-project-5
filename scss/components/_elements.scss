@@ -1,0 +1,30 @@
+header{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    letter-spacing: .7rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 4;
+}
+
+#search,
+input{
+    border: cadetblue solid 2px;
+    border-radius: 1rem;
+    padding: 1%;
+    font-size: 1.75rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    &:focus{
+        outline: none;
+        transition: 1s;
+        background-color: #e7e7e7; 
+    }
+    &:hover{
+        transition: 1s;
+        background-color: #e7e7e7;
+    }
+}
