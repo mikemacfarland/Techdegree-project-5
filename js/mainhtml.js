@@ -1,16 +1,11 @@
-
-
-
-function photo(value){
+function createPhoto(photos){
     return   `<div class="thumb">\n
-                <img src="${value.thumb}">\n
-                <h3>${value.title}</h3>\n
-                <p>${value.caption}</p>\n
+                <a src="${photos.fullscreen}"><img src="${photos.thumb}"></a>\n
             </div>`;
         }
 
-function lessCode(value){
-        return document.querySelector("main").innerHTML = photo(value);
+function insertPhotos(){
+        return document.querySelector("main").innerHTML = photos.map(photos => createPhoto(photos)).join('');
     }
 
-lessCode(bluebells);
+insertPhotos();

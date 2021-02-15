@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 header{
     font-family: 'Permanent Marker', cursive;
     text-align: center;
@@ -5,16 +9,24 @@ header{
 }
 
 main{
+    width: 100%;
+    margin: 2.5% auto;
     display: grid;
-    grid-template-columns: 4;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(3, 200px);
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content: center;
 }
 
 #search,
 input{
+    width: 25%;
     border: cadetblue solid 2px;
     border-radius: 1rem;
-    padding: 1%;
-    font-size: 1.75rem;
+    padding: .25% 1%;
+    font-size: 1.5rem;
     font-family: 'Amatic SC', cursive;
     font-weight: 600;
     letter-spacing: .05rem;
@@ -28,3 +40,8 @@ input{
         background-color: #e7e7e7;
     }
 }
+
+.thumb{
+    text-align: center;
+}
+

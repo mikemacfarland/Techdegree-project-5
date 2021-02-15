@@ -1,0 +1,13 @@
+@media (min-width: $mobile) {
+    main{
+        grid-template-columns: auto;
+        grid-template-rows: 1;
+    }
+
+}
+
+@media (min-width: $tablet) {
+    main{ 
+    }
+
+}
