@@ -1,6 +1,6 @@
 function createPhoto(photos){
     return   `<div class="thumb">\n
-                <a src="${photos.fullscreen}"><img src="${photos.thumb}"></a>\n
+                <img src="${photos.fullscreen}" alt="${photos.alt}"></a>\n
             </div>`;
         }
 
