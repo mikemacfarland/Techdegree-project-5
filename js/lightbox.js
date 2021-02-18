@@ -4,20 +4,30 @@ lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 lightbox.innerHTML = `<div class="container">\n
                         <img class="previous">\n
-                        <img class="photo" src=''>\n
+                        <img id="photo" src=''>\n
                         <img class="next">\n
                     </div>\n
-                    <h3></h3>\n
-                    <p></p>`
+                    <h3 id="title"></h3>\n
+                    <p id="caption"></p>`
 
 const images = document.querySelectorAll('img')
+
+const fullscreen = photos.fullscreen
 
 images.forEach(image => {
     image.addEventListener('click', e => {
         const element = document.getElementsByClassName("photo")
-        if (e.contains = element){
+        if (e.target = element){
             lightbox.classList.add('active')
-            lightbox.document.getElementsByClassName('photo').src = 'test'
+            document.getElementById('photo').src = e.target.src
+            document.getElementById('title').innerHTML = 
+            document.getElementById('caption').innerHTML = 'test'
+        }
+    })
+    lightbox.addEventListener('click', j =>{
+        const lbComponents = document.getElementsByTagName('img')
+        if (j.target = lbComponents){
+            lightbox.classList.remove('active')
         }
     })
 })

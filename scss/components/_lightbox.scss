@@ -10,6 +10,8 @@
 
 #lightbox .container{
     flex-direction: row;
+    align-items: center;
+    justify-items: center;
 }
 
 #lightbox.active {
@@ -29,4 +31,5 @@
     padding:2.5px;
     max-height: 90%;
     max-width: 80%;
+    z-index: 100;
 }
