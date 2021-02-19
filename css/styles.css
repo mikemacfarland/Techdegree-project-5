@@ -71,9 +71,11 @@ input:hover {
 }
 
 #lightbox .container {
+  display: flex;
   flex-direction: row;
+  max-height: 90%;
+  max-width: 80%;
   align-items: center;
-  justify-items: center;
 }
 
 #lightbox.active {
@@ -83,13 +85,27 @@ input:hover {
   align-items: center;
 }
 
-#lightbox.active img {
+#lightbox.active #photo {
+  display: block;
   border: cadetblue solid 5px;
   border-radius: 5px;
   padding: 2.5px;
-  max-height: 90%;
-  max-width: 80%;
-  z-index: 100;
+  height: 100%;
+  width: 90%;
+}
+
+#lightbox .previous,
+#lightbox .next {
+  border: red solid 1px;
+  height: 100px;
+  width: 2.5%;
+  opacity: 40%;
+  cursor: pointer;
+}
+#lightbox .previous:hover,
+#lightbox .next:hover {
+  opacity: 90%;
+  transition: 0.7s;
 }
 
 /*# sourceMappingURL=styles.css.map */

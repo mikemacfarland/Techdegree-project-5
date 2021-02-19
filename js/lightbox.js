@@ -3,9 +3,9 @@ const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 lightbox.innerHTML = `<div class="container">\n
-                        <img class="previous">\n
+                        <img class="previous" src='images/svg/left-arrow.svg'>\n
                         <img id="photo" src=''>\n
-                        <img class="next">\n
+                        <img class="next" src='images/svg/right-arrow.svg'>\n
                     </div>\n
                     <h3 id="title"></h3>\n
                     <p id="caption"></p>`
@@ -32,8 +32,19 @@ images.forEach(image => {
     })
 })
 
+lightbox.addEventListener('click', n =>{
+    const next = document.getElementsByClassName('next')
+    if(n.target = next){
+    document.getElementById('photo').src = "images/01.jpg"
+    }
+})
 
-
+lightbox.addEventListener('click', n =>{
+    const previous = document.getElementsByClassName('previous')
+    if(n.target = previous){
+        document.getElementById('photo').src = "images/03.jpg"
+    }
+})
 
 
 
