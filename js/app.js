@@ -1,3 +1,7 @@
-const baguetteBoxMin = require("./baguetteBox.min");
+const baguetteBoxMin = "./baguetteBox.min";
 
-baguetteBoxMin.run('.gallery');
+// baguette box function
+baguetteBox.run('.gallery');
+
+// Variable for search filter
+const search = new Filter('search', 'data-caption');    
