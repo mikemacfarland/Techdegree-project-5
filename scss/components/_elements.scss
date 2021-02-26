@@ -45,3 +45,9 @@ a{
 .inactive{
     display: none;
 }
+
+@media screen and (min-width:1000px){
+    .gallery{
+        grid-template-columns: repeat(4, 200px);
+    }
+}
